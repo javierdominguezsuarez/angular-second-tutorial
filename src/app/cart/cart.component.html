@@ -1,10 +1,10 @@
 <h3>Cart</h3>
+<h4 *ngIf="items.length <=0 "> You don't have any product on the cart yet</h4>
 <h4><a [routerLink]="['/shipping']" *ngIf="items.length > 0">Shipping Prices</a></h4>
-<article class="item-to-buy" *ngFor="let product of items" >
-    <h4>{{ product.name }}</h4>
-    <p>{{ product.price | currency }} $</p>
-</article>
-
+<section class="item-list">
+  <app-product-cart-view class="item-to-buy" *ngFor="let product of items" [product]="product" (removeEvent)="onRemove($event)"> </app-product-cart-view>
+</section>
+<h5 *ngIf="totalPrice > 0">Total price {{ totalPrice }}  $ </h5>
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" *ngIf="items.length > 0">
     <div>
         <label for="name">

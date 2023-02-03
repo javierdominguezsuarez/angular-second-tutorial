@@ -1,0 +1,13 @@
+<article *ngIf="product">
+    <section class="product-remove">
+        <button  (click)="removeItem( product.id )">Remove</button>
+    </section>
+    <section class="product-img">
+        <img src="https://catalogo.orange.es/catalogo/Imagenes/Dispositivos/iphone_14_pro_max_morado_FrontBack.webp">
+    </section>
+    <section class="product-data">
+        <h3>{{ product.name }}</h3> 
+        <h4>{{ product.price }}</h4>
+    </section>   
+    <p> <dfn id="def-product">{{ product.name }}</dfn> {{ product.description }}</p>
+</article>

@@ -10,6 +10,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
+import { ProductCartViewComponent } from './product-cart-view/product-cart-view.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -29,7 +30,8 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    ProductCartViewComponent
   ],
   bootstrap: [
     AppComponent
