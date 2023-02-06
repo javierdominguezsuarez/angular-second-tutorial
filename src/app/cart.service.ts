@@ -19,6 +19,7 @@ export class CartService {
       .reduce((prev, curr) => prev + curr, 0)
   }
   removeItem(id: number){
+    // Se podria probar a hacer pop (id) para solo quitar una 
     this.items = this.items.filter(item => item.id != id)
     return this.items.filter(item => item.id != id)
   }

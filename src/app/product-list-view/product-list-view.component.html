@@ -1,0 +1,23 @@
+<article *ngIf="product">
+    <section class="product-name">
+            <a 
+                [title]="product.name + ' details' "
+                [routerLink]="['/products', product.id]">
+                {{ product.name }}
+            </a>
+    </section>
+    <section class="product-img">
+        <img src="https://catalogo.orange.es/catalogo/Imagenes/Dispositivos/iphone_14_pro_max_morado_FrontBack.webp">
+    </section>
+    <section class="product-data">
+        <h3>{{ product.name }}</h3> 
+        <h4>{{ product.price }}$ </h4>            
+    </section>   
+    <p *ngIf="product.description"> <dfn id="def-product">{{ product.name }}</dfn> {{ product.description }}</p>
+    <section class="product-actions">
+        <button (click)="share()">
+            Share          
+        </button>
+        <!--<app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts> -->
+    </section>    
+</article>

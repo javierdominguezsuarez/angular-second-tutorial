@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .item-to-buy{
     border: 1px solid #616161;
@@ -12,9 +12,9 @@
     flex-direction: column;
     padding: 15px;
     align-items: center;
-    margin: 20px;
     
 }
+
 
 h4{
     color: #1976d2;

@@ -11,6 +11,7 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { ProductCartViewComponent } from './product-cart-view/product-cart-view.component';
+import { ProductListViewComponent } from './product-list-view/product-list-view.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -31,7 +32,8 @@ import { ProductCartViewComponent } from './product-cart-view/product-cart-view.
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    ProductCartViewComponent
+    ProductCartViewComponent,
+    ProductListViewComponent
   ],
   bootstrap: [
     AppComponent
