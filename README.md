@@ -1,3 +1,4 @@
-# angular-second-tutorial
+# Angular-second-tutorial
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-csvyd6-eazwwh)
+## The result of the tutorial is available here
+https://angular-second-tutorial.vercel.app/ 
